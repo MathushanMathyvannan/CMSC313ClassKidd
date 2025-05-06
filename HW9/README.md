@@ -8,4 +8,4 @@ Lesson two is - helloworldtwo.asm
 
 The description of the nasm and ld parameters used - HW9.txt
 
-Files have my name on the first line and screenshots have my umbc id as I ran the code on UMBC gl servers (mmathyv1)
+Files have my name on the first line and screenshots have my UMBC ID in terminal, as I ran the code on UMBC gl servers (mmathyv1)
