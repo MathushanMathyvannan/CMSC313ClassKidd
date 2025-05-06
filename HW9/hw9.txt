@@ -1,0 +1,38 @@
+CMSC 313 HW#9 Mathushan Mathyvannan
+
+nasm -f elf32 -g -F dwarf -o myProgram.o myProgram.asm
+
+nasm: calls the nasm assembler
+-f elf32: tells assembler to make a 32 bit object in executable and linkable format
+-g: for debugging
+-F dwarf: Tells assembler to use dwarf debugging format
+-o myProgram.o: Makes output file
+myProgram.asm: Name of files with assembly code in it
+
+EX: nasm -f elf32 -g -F dwarf -o helloworldone.o helloworldone.asm
+
+ld -m elf_i386 -o myProgram myProgram.o
+
+ld: calls linker
+-m elf_i386: Tells it to make 32-bit Linux executable
+-o myProgram: Makes executable file
+myProgram.o: Name of file that will be linked
+
+Ex: ld -m elf_i386 -o helloworldone helloworldone.o
+
+./myProgram
+
+This is how you run the executable
+
+Ex: ./helloworldone
+
+[mmathyv1@linux6 hw9]$ nasm -f elf32 -g -F dwarf -o helloworldone.o helloworldone.asm
+[mmathyv1@linux6 hw9]$ ld -m elf_i386 -o helloworldone helloworldone.o
+[mmathyv1@linux6 hw9]$ ./helloworldone
+Hello World!
+Segmentation fault (core dumped)
+[mmathyv1@linux6 hw9]$ nasm -f elf32 -g -F dwarf -o helloworldtwo.o helloworldtwo.asm
+[mmathyv1@linux6 hw9]$ ld -m elf_i386 -o helloworldtwo helloworldtwo.o
+[mmathyv1@linux6 hw9]$ ./helloworldtwo
+Hello World!
+[mmathyv1@linux6 hw9]$ 
