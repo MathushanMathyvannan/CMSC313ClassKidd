@@ -1,3 +1,9 @@
+; CMSC 313 HW#11 Mathushan Mathyvannan - section 2 Mon/Wen 10-11:15 AM
+; Hex to ASCII Conversion and Print - 32-bit
+; Assemble with: nasm -f elf32 -g -F dwarf -o asciiPrint.o asciiPrint.asm
+; Link with: ld -m elf_i386 -o asciiPrint asciiPrint.o
+; Run with: ./asciiPrint
+
 section .data
     inputBuf: db 0x83, 0x6A, 0x88, 0xDE, 0x9A, 0xC3, 0x54, 0x9A
     countIn equ 8
