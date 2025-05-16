@@ -19,6 +19,7 @@ _start:
     xor esi, esi          ; input index set to 0
     xor edi, edi          ; output index set to 0
 
+; starts for loop that loops 8 times
 .loop:
     cmp esi, countIn
     jge .print            ; jumps to print after 8 loops
